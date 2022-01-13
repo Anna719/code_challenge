@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.pioneerContainer .pioneerCards, .pioneerContainer .pioneerCards .pioneerCard .cardsInfo p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pioneerContainer, .pioneerContainer .pioneerCards .pioneerCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.pioneerContainer {
+  padding-top: 50px;
+  width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.pioneerContainer .bestPrice {
+  color: #fa9531;
+}
+
+.pioneerContainer h1 {
+  line-height: 1;
+  padding: 10px 0 20px 0;
+}
+
+.pioneerContainer .graphContainer {
+  background-color: #ffffff;
+  padding: 10px;
+  width: 70%;
+  position: relative;
+  top: -22rem;
+  left: 3rem;
+}
+
+.pioneerContainer img {
+  padding-top: 20px;
+}
+
+.pioneerContainer .pioneerLeft {
+  width: 50%;
+  margin-right: 60px;
+}
+
+.pioneerContainer .pioneerCards {
+  padding: 10px 30px;
+  width: 100%;
+  background-image: url("../../asssets/bg2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pioneerContainer .pioneerCards button {
+  border-radius: 6px;
+  padding: 10px 0;
+  background: -webkit-gradient(linear, left top, right top, from(#ffbd39), color-stop(100%, #fa9531), to(#fa9531));
+  background: linear-gradient(90deg, #ffbd39 0%, #fa9531 100%, #fa9531 100%);
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 80%;
+  margin-top: 20px;
+  font-weight: bolder;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.pioneerContainer .pioneerCards .pioneerCard {
+  background-image: url("../../asssets/Component2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+  padding: 50px;
+}
+
+.pioneerContainer .pioneerCards .pioneerCard h2 {
+  font-size: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 15px;
+  background: -webkit-gradient(linear, left top, right top, from(#ffbd39), color-stop(100%, #fa9531), to(#fa9531));
+  background: linear-gradient(90deg, #ffbd39 0%, #fa9531 100%, #fa9531 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pioneerContainer .pioneerCards .pioneerCard .cardstext {
+  color: grey;
+  opacity: 0.8;
+  font-size: 15px;
+  padding-top: 10px;
+  width: 20rem;
+}
+
+.pioneerContainer .pioneerCards .pioneerCard img {
+  width: 50px;
+  height: 50px;
+}
+
+.pioneerContainer .pioneerCards .pioneerCard .cardsInfo p {
+  padding-left: 5rem;
+}
+
+.pioneerContainer .pioneerCards .pioneerCard .bold {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 1400px) {
+  .pioneerContainer .pioneerLeft img {
+    width: 20rem;
+  }
+  .pioneerContainer .pioneerLeft .graphContainer {
+    padding: 10px;
+    top: -15rem;
+    left: 3rem;
+    width: 15rem;
+  }
+  .pioneerContainer .pioneerLeft .graphContainer img {
+    width: 16rem;
+  }
+  .pioneerRight {
+    background-size: cover;
+  }
+  .pioneerRight .pioneerCards {
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 15px;
+  }
+  .pioneerRight .pioneerCards .pioneerCard {
+    padding: 5px 20px 5px 0;
+    background-size: cover;
+    height: 150px;
+    font-size: 10px;
+  }
+  .pioneerRight .pioneerCards .pioneerCard h2 {
+    padding-left: 45px;
+  }
+  .pioneerRight .pioneerCards .pioneerCard p {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .pioneerContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .pioneerContainer .pioneerRight {
+    margin-bottom: 50px;
+  }
+  .pioneerContainer .pioneerLeft {
+    width: 20rem;
+  }
+}
+/*# sourceMappingURL=Pioneering.css.map */

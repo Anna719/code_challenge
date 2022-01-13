@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+$orange-gradient: linear-gradient(
+  90deg,
+  #ffbd39 0%,
+  #fa9531 100%,
+  #fa9531 100%
+);
+$orange: #fa9531;
+$white: #ffffff;
+$fontLargeColor: #050505;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+%columnFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+%rowFlex {
+  display: flex;
+  flex-direction: row;
+}
+@mixin buttonOrange($width) {
+  border-radius: 6px;
+  padding: 10px 0;
+  background: $orange-gradient;
+  color: $white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: $width;
+  margin-top: 20px;
+  font-weight: bolder;
+}
+
+@mixin h1 {
+  line-height: 1;
+  padding: 10px 0 20px 0;
+}
